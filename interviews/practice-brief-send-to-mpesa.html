@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Practice Brief: Send to M-Pesa</title>
+<style>
+  @page { size: A4; margin: 16mm 16mm 18mm; }
+  :root { --green: #00863f; --ink: #1c2421; --muted: #5b6662; --line: #d9e2dd; --tint: #eef6f1; }
+  * { box-sizing: border-box; }
+  body { font-family: "Inter", "Helvetica Neue", Arial, sans-serif; color: var(--ink); font-size: 10.5pt; line-height: 1.5; margin: 0; background: #fff; }
+  header { border-bottom: 3px solid var(--green); padding-bottom: 10px; margin-bottom: 14px; }
+  .eyebrow { color: var(--green); font-weight: 700; letter-spacing: .08em; text-transform: uppercase; font-size: 8.5pt; }
+  h1 { font-size: 22pt; margin: 4px 0 6px; line-height: 1.15; }
+  .meta { display: flex; gap: 18px; color: var(--muted); font-size: 9.5pt; }
+  .meta b { color: var(--ink); }
+  h2 { font-size: 12.5pt; color: var(--green); margin: 18px 0 6px; padding-bottom: 3px; border-bottom: 1px solid var(--line); break-after: avoid; }
+  p { margin: 0 0 8px; }
+  ul, ol { margin: 0 0 8px; padding-left: 20px; }
+  li { margin-bottom: 3px; }
+  .callout { background: var(--tint); border-left: 4px solid var(--green); padding: 10px 14px; border-radius: 0 6px 6px 0; margin: 8px 0 10px; }
+  blockquote { margin: 6px 0 0; padding: 0; font-style: italic; color: #34403b; }
+  blockquote p { margin: 0 0 4px; }
+  .personas { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .card { border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; break-inside: avoid; }
+  .card h3 { margin: 0 0 4px; font-size: 11pt; }
+  .card .sub { color: var(--muted); font-size: 9pt; margin-bottom: 4px; }
+  table { width: 100%; border-collapse: collapse; margin: 4px 0 8px; break-inside: avoid; }
+  th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { background: var(--tint); font-size: 9.5pt; }
+  td:first-child { white-space: nowrap; font-weight: 600; width: 110px; }
+  .check li { list-style: none; position: relative; padding-left: 4px; }
+  .check { padding-left: 18px; }
+  .check li::before { content: "☐"; position: absolute; left: -16px; color: var(--green); }
+  .section { break-inside: avoid; }
+  .notes { border: 1px dashed var(--line); border-radius: 8px; height: 150px; padding: 8px 12px; color: var(--muted); font-size: 9pt; }
+  footer { margin-top: 16px; padding-top: 8px; border-top: 1px solid var(--line); color: var(--muted); font-size: 8.5pt; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="eyebrow">UI/UX Designer · Practice Assessment</div>
+  <h1>Send to M-Pesa: Flow Redesign</h1>
+  <div class="meta">
+    <span><b>Time:</b> 90 minutes</span>
+    <span><b>Tools:</b> Figma + paper</span>
+    <span><b>Platform:</b> Android, 360×800</span>
+  </div>
+</header>
+
+<h2>The brief</h2>
+<p>Co-op Bank's data shows that <b>38% of customers who start a "Send to M-Pesa" transfer in the app never finish it.</b> Support also gets many complaints:</p>
+<div class="callout">
+  <blockquote>
+    <p>"I didn't know there was a fee until after I sent."</p>
+    <p>"I sent money to the wrong number and couldn't reverse it."</p>
+    <p>"The app froze after I entered my PIN. I didn't know if the money went or not, so I sent again and was charged twice."</p>
+  </blockquote>
+</div>
+<p><b>Your task:</b> Redesign the <b>Send to M-Pesa</b> flow in the Co-op mobile app to reduce drop-off and errors.</p>
+
+<h2>Users</h2>
+<div class="personas">
+  <div class="card">
+    <h3>Mama Wanjiru, 52</h3>
+    <div class="sub">Murang'a · Dairy farmer · Sacco member</div>
+    <ul>
+      <li>Low-end Android phone, patchy 3G</li>
+      <li>Sends money to her children at university</li>
+      <li>Prefers Swahili and is nervous about making mistakes</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3>Brian, 27</h3>
+    <div class="sub">Nairobi · Works in marketing</div>
+    <ul>
+      <li>Uses the app every day</li>
+      <li>Sends money to friends and his landlord's M-Pesa</li>
+      <li>Wants it fast and hates extra steps</li>
+    </ul>
+  </div>
+</div>
+
+<div class="section">
+<h2>Requirements</h2>
+<p>Your flow must include:</p>
+<ul class="check">
+  <li>Choosing a recipient: a new number, a phone contact, or a recent or saved recipient</li>
+  <li>Entering the amount and choosing which account to send from</li>
+  <li>Showing the <b>fee and total before the customer confirms</b></li>
+  <li>Showing the <b>recipient's registered M-Pesa name</b> before sending</li>
+  <li>PIN or fingerprint confirmation</li>
+  <li>A success screen with a receipt that can be shared</li>
+  <li><b>Three failure states:</b> insufficient funds · wrong or unregistered number · network timeout after the PIN, where the money's status is unknown</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>Constraints</h2>
+<ul>
+  <li>Mobile only, 360×800 frame (Android)</li>
+  <li>Use Co-op green for primary actions. You don't need the real logo.</li>
+  <li>Meet WCAG AA contrast, with tap targets of at least 44 px</li>
+  <li>Transfer limit is KES 150,000 per transaction</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>What to deliver</h2>
+<ol>
+  <li>A user flow diagram showing all steps and branches</li>
+  <li>Low-fi sketches of the key screens (photo or quick frames)</li>
+  <li><b>5–8 high-fi screens</b>, including at least 2 of the failure states</li>
+  <li>Short notes on the canvas explaining your key decisions</li>
+  <li>A 5-minute presentation: the problem, your solution, edge cases, and how you'd measure success</li>
+</ol>
+</div>
+
+<div class="section">
+<h2>Timer plan</h2>
+<table>
+  <tr><th>Clock</th><th>Step</th></tr>
+  <tr><td>0:00–0:10</td><td>Restate the problem, list your assumptions, and set a success metric</td></tr>
+  <tr><td>0:10–0:22</td><td>User flow with all branches</td></tr>
+  <tr><td>0:22–0:35</td><td>Paper sketches, then pick one direction</td></tr>
+  <tr><td>0:35–1:15</td><td>High-fi screens</td></tr>
+  <tr><td>1:15–1:30</td><td>Annotate, tidy up, and rehearse your 5-minute talk</td></tr>
+</table>
+</div>
+
+<div class="section">
+<h2>Stretch goals <span style="font-weight:400;color:var(--muted);font-size:10pt">(only if you have time left)</span></h2>
+<ul>
+  <li>A Swahili version of the confirmation screen</li>
+  <li>A "Save this recipient" prompt after a successful send</li>
+  <li>How the same flow would work on USSD (*667#)</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>How you'll be assessed</h2>
+<ul>
+  <li><b>Problem understanding:</b> did you tackle the drop-off and the three complaints directly?</li>
+  <li><b>Flow logic:</b> is the path clear, with every branch accounted for?</li>
+  <li><b>Edge cases:</b> are the failure states honest, calm and actionable?</li>
+  <li><b>Visual consistency:</b> are spacing, type and components applied consistently?</li>
+  <li><b>Accessibility:</b> contrast, tap targets, and labels that don't rely on colour alone</li>
+  <li><b>Communication:</b> can you explain why you made each decision?</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>Notes</h2>
+<div class="notes">Problem statement · Assumptions · Success metric</div>
+</div>
+
+<footer>Practice material for the Co-operative Bank of Kenya UI/UX Designer practical assessment (Thu 5 Nov 2026, 14:00). The scenario and figures are made up for practice.</footer>
+
+</body>
+</html>
