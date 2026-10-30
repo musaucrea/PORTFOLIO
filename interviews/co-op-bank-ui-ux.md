@@ -1,0 +1,123 @@
+# Co-operative Bank of Kenya: UI/UX Designer
+
+**Stage 1: Practical assessment**
+
+| | |
+|---|---|
+| Date | Thursday, 5 November 2026 |
+| Time | 14:00 (aim to arrive by 13:30) |
+| Venue | The Hive, CIC Plaza II, Ground Floor, Mara Road, Upper Hill, Nairobi |
+| Contact | Lavinia Wasawo (HR & Administration): lwasawo@co-opbank.co.ke, +254 711 013 482 |
+
+---
+
+## 1. Confirmation reply (send today, Reply All)
+
+> **Subject:** RE: Practical Assessment – UI/UX Designer
+>
+> Dear Lavinia,
+>
+> Thank you for the invitation. I confirm that I will attend the practical assessment for the UI/UX Designer role on Thursday, 5th November 2026 at 14:00 at The Hive, CIC Plaza II, Upper Hill.
+>
+> I will bring my laptop and my original National ID.
+>
+> Is there any specific software you would like me to have installed for the assessment (for example Figma desktop)? Will internet access be available on site?
+>
+> I look forward to meeting you and the team.
+>
+> Kind regards,
+> Joshua [Surname]
+> [Phone number]
+
+---
+
+## 2. Checklist for the day
+
+- [ ] Original National ID
+- [ ] Laptop, fully charged, plus charger
+- [ ] Mouse (wireless or wired)
+- [ ] Phone hotspot, in case the venue Wi-Fi is slow or locked down
+- [ ] **Work offline too:** Figma desktop installed and signed in, and a backup tool in case Figma is unavailable (Penpot, or Adobe XD if you have it)
+- [ ] Your own UI kit or wireframe kit saved offline, plus fonts installed (Inter, Roboto)
+- [ ] Notebook and pen for quick sketching before you go digital
+- [ ] Portfolio open in a browser tab and saved as a PDF on the desktop
+- [ ] Desktop cleared of personal files and notifications muted (you may be asked to screen-share or present)
+- [ ] Travel: Upper Hill traffic is heavy around lunchtime, so leave early
+
+---
+
+## 3. What the practical will probably test
+
+Bank UI/UX practicals usually last 1–3 hours. Expect one of these:
+
+1. **Redesign an existing flow**, for example on the MCo-opCash app or Co-op internet banking: send money, pay bills or buy airtime, open an account, apply for a loan, check a statement.
+2. **Design a new feature from a short brief**, for example savings goals, card controls (freeze/unfreeze), a loan eligibility checker, or onboarding for a new customer.
+3. **Critique a screen or flow**: find usability problems and propose fixes.
+4. **Present your work**: a 5–10 minute walkthrough of your decisions.
+
+### A process you can fit into a timed brief
+
+Split your time roughly like this:
+
+| Time | Step |
+|---|---|
+| 10% | **Understand the brief.** Restate the problem, users, constraints and success metric in a single sentence each. Write down your assumptions. |
+| 15% | **User and flow.** Write 1–2 personas in a few words each, for example a "Sacco member in Kisumu on a low-end Android phone" and a "young professional in Nairobi using the app daily". Map the user flow with every step. |
+| 15% | **Sketch / low-fi.** Make quick wireframes of the key screens. Pick one direction. |
+| 45% | **Hi-fi.** Design 3–6 key screens with consistent components, including empty, error, loading and success states. |
+| 15% | **Present.** Cover the problem, users, flow, screens, edge cases, how you'd test it, and the metrics you'd track. |
+
+Show your thinking on the canvas: label your assumptions, the flow and the reasons for each decision. Assessors grade how you work as well as the final screens.
+
+---
+
+## 4. Banking UX points to show you understand
+
+**Trust and security**
+- Show a clear confirmation screen before any money moves: amount, recipient name and account, fees, total.
+- Ask for PIN or biometric login at the right moments without adding friction everywhere.
+- Mask sensitive data (account numbers, balance hide/show toggle).
+- Make it easy to recognise fraud and report it ("This wasn't me").
+
+**Kenyan context**
+- Integration with M-Pesa (paybill, till, send to M-Pesa) is central to everyday banking.
+- Many customers use low-end Android devices on unstable data, so keep screens light and design offline/retry states. Remember USSD (*667#) users exist too.
+- Support Swahili and English, and use plain language rather than banking jargon.
+- Co-op's customer base includes Saccos, co-operatives, farmers and diaspora customers, so think beyond the urban young professional.
+- Use KES formatting consistently (KES 1,250.00).
+
+**Accessibility (WCAG 2.1 AA)**
+- Text contrast of at least 4.5:1, tap targets of at least 44×44 px, and labels that don't rely on colour alone.
+- Error messages say what went wrong and how to fix it.
+- Layouts work with large text and screen readers.
+
+**Brand**
+- Co-op Bank's brand colour is green. Use it for primary actions and keep the palette restrained. Don't copy their logo or assets unless the brief provides them.
+
+---
+
+## 5. Questions to prepare answers for
+
+- Walk us through a project from your portfolio. What was the problem, what was your role, what did you do and what was the outcome?
+- How do you design when you have no time for user research?
+- How do you handle pushback from developers or business stakeholders?
+- How would you measure whether this design succeeded? (Mention task completion rate, drop-off per step, time to complete, support tickets, app store rating.)
+- How do you work with developers at handoff? (Mention Figma dev mode, specs, component naming, design tokens.)
+- What would you improve in the MCo-opCash app? **Download it and use it before Thursday.** Note 3 friction points and 3 things it does well.
+
+## 6. Questions to ask them
+
+- What does the design team look like, and who would I report to?
+- Is there a design system in place, or is building one part of the role?
+- How are design decisions validated: user testing, analytics, A/B tests?
+- What are the next stages after the practical?
+
+---
+
+## 7. Practice before Thursday
+
+Do at least one timed (90-minute) run:
+
+> **Practice brief:** Design a "Send to M-Pesa" flow in the Co-op mobile app for a first-time user, including recipient selection, amount entry, fee display, confirmation, PIN, success, and failure (insufficient funds / network timeout).
+
+Then present it out loud to someone in 5 minutes.
